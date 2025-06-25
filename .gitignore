@@ -1,0 +1,14 @@
+# .gitignore
+
+# Secrets
+.env
+
+# Virtual environment
+.venv/
+
+# Test cache
+.pytest_cache/
+
+# Python bytecode
+__pycache__/
+
