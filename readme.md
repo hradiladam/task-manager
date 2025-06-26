@@ -16,6 +16,29 @@ You can add, view, update, and delete tasks directly from your terminal.
 - Uses MySQL to store tasks  
 - Automated tests included with pytest
 
+### Structure
+
+```
+task-manager/
+├── src/
+│   ├── main.py 
+│   ├── db_config.py
+│   ├── task_database.py
+│   ├── task_manager.py
+│   └── utils.py
+│
+├── tests/
+│   ├── test_task_database.py
+│   ├── test_task_manager.py
+│   └── test_init.py
+│
+├── .venv/ # Virtual environment (ignored by Git)
+├── .env # Environment variables (e.g. DB credentials)
+├── requirements.txt
+├── pytest.ini
+└── README.md
+```
+
 ### What is tested?
 
 - Database operations (`tests/test_task_database.py`):
@@ -67,24 +90,3 @@ pip install -r requirements.txt
 ```bash
 python src/main.py
 ```
-
-### Structure
-
-task-manager/
--- src/
-    -- main.py
-    -- db_config.py
-    -- task_database.py
-    -- task_manager.py
-    -- utils.py
-
--- tests/
-    -- test_task_database.py
-    -- test_task_manager.py
-    --test_init.py
-
--- .venv/
--- .env
--- requirements.txt
--- README.md
--- pytest.ini
